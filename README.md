@@ -4,19 +4,19 @@
 
 > Zero-dependency TypeScript Constraint Satisfaction Problem (CSP) solver. Backtracking + AC3 arc consistency + MRV heuristic + forward checking + min-conflicts. Like Python `python-constraint`. Solves N-Queens, Sudoku, graph coloring, scheduling, cryptarithmetic.
 
-[![npm](https://img.shields.io/npm/v/cspkit)](https://www.npmjs.com/package/cspkit)
+[![npm](https://img.shields.io/npm/v/@billdaddy/cspkit)](https://www.npmjs.com/package/@billdaddy/cspkit)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ## Install
 
 ```bash
-npm install cspkit
+npm install @billdaddy/cspkit
 ```
 
 ## Quick start
 
 ```typescript
-import { CSP, allDifferent, notEqual } from "cspkit";
+import { CSP, allDifferent, notEqual } from "@billdaddy/cspkit";
 
 // Australia map coloring — no adjacent regions share a color
 const csp = new CSP();
@@ -59,7 +59,7 @@ A CSP has:
 ### N-Queens
 
 ```typescript
-import { nQueens } from "cspkit";
+import { nQueens } from "@billdaddy/cspkit";
 
 const solutions = nQueens(8).solveAll();
 // → 92 solutions, each like { Q0: 0, Q1: 4, Q2: 7, Q3: 5, Q4: 2, Q5: 6, Q6: 1, Q7: 3 }
@@ -68,7 +68,7 @@ const solutions = nQueens(8).solveAll();
 ### Graph coloring
 
 ```typescript
-import { graphColoring } from "cspkit";
+import { graphColoring } from "@billdaddy/cspkit";
 
 const csp = graphColoring(
   [["A", "B"], ["B", "C"], ["A", "C"]],  // triangle

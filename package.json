@@ -1,5 +1,5 @@
 {
-  "name": "cspkit",
+  "name": "@billdaddy/cspkit",
   "version": "0.1.0",
   "description": "Zero-dependency TypeScript Constraint Satisfaction Problem (CSP) solver: backtracking with AC3 arc consistency, MRV heuristic, forward checking, min-conflicts. Like Python python-constraint.",
   "type": "module",
